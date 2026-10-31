@@ -1,0 +1,146 @@
+<div class="menu">
+<div id="accessability">
+
+<button class="hide-gif">MOTION</button>
+<script type="text/javascript">
+    $(function() {
+        $(".hide-gif").on("click", function() {
+            $(".motion-toggle").fadeToggle();
+        });
+    });
+</script>
+<button class="hide-nav">SITEMAP</button>
+<script type="text/javascript">
+    $(function() {
+        $(".hide-nav").on("click", function() {
+            $(".menu-toggle").slideToggle();
+        });
+    });
+</script>
+</div>
+<span class="menu-toggle">
+    <nav>
+        {% include 'menu.njk' %}
+    </nav>
+</span>
+</div>
+<div class="sidebar">
+<div class="container" id="status" >
+<h2 style="text-align:center;" id="status">Status:</h2>
+    <a href="https://www.imood.com/users/lichenthropic" target="_blank">
+        <img class="click" src="https://moods.imood.com/display/uname-lichenthropic/imood.gif" alt="The current mood of lichenthropic at www.imood.com"> 
+    </a>
+</div>
+
+<div class="container" id="rss" style="text-align:center"> 
+    <a class="click" href="https://lichenthropic.neocities.org/rss.xml" onClick="return popup(this, 'rss')">
+        <img class="click" src="https://lichenthropic.neocities.org/images/buttons/rss.png" alt="RSS Feed logo">
+    </a>
+<!-- RSS FEED HERE -->
+</div>
+
+<div class="container" id="currently">
+
+    <h2 style="text-align:center">CURRENTLY:</h2>
+
+        <h3 style="text-align:center;">Smoking:</h3>
+
+            <h4 style="text-align:center;">
+                <a class="click" href="https://www.allbud.com/marijuana-strains/sativa-dominant-hybrid/lemon-meringue" target="_blank" title="allbud link">
+                    <strong>Lemon Meringue</strong>
+                </a>
+            </h4>
+            
+            <h3 style="text-align:center;">Listening:</h3> 
+                <a class="click" href="https://www.dungeonsanddaddies.com/episodes/ep1" target="_blank" title="link to dungeons and daddies website">
+                    <h4 style="text-align:center;">
+                        <strong>Dungeons & Daddies</strong>
+                    </h4>
+                </a>
+            
+            <h3 style="text-align:center;">Watching:</h3> 
+                <h4 style="text-align:center;">
+                    <strong>Katekyo Hitman: Reborn!</strong>
+                </h4>
+            
+            <h3 style="text-align:center;"> Reading:</h3> 
+                <h4 style="text-align:center;">
+                    <a class="click" href="https://app.thestorygraph.com/books/d828c1b2-785b-4f56-bda7-6e820b3f0777" target="_blank" title="storygraph link">
+                        <strong>Fable for the End of the World - Ava Reid</strong>
+                    </a>
+                </h4>
+</div>
+
+<div class="container" id="feedback">
+
+    <h2 style="text-align:center"> SAY HI!</h2>
+
+        <span class="motion-toggle">
+        <a class="click" href="https://lichenthropic.neocities.org/pages/guestbook.html" onClick="return popup(this, 'guestbook')">
+            <img class="button" id="guestbook" src="https://lichenthropic.neocities.org/images/buttons/guestbook-button.gif" title="Link to GUESTBOOK" alt="GUESTBOOK">
+        </a>
+        </span>
+
+        <span class="motion-toggle">
+        <a class="click" href="https://lichenthropic.neocities.org/pages/chat.html" onClick="return popup(this, 'chatbox')">
+            <img class="button" style="text-align:center" src="https://lichenthropic.neocities.org/images/buttons/chat-now-lichenthropic.gif" alt="chat now button">
+        </a>
+        </span>
+            
+        <span class="motion-toggle">
+        <a class="click" href="https://neocities.org/site/lichenthropic" onClick="return popup(this, 'neocities')">
+            <img class="button" id="neocitiesbutton" src="https://lichenthropic.neocities.org/images/buttons/NeoCitiesGreen.gif" title="Link to Neocities profile" alt="Neocities button">
+        </a>
+        </span>
+</div>
+
+<div class="container" id="likes">
+    <h2 style="text-align:center;"> LIKES </h2>
+        <ws-widget class="click" type="like" iid="6130"></ws-widget>
+</div>
+
+<div class="container" id="buttonbox">
+    
+    <h2 style="text-align:center;">♡</h2>
+
+        <span class="motion-toggle">
+            <img class="button" id="construction" src="https://lichenthropic.neocities.org/images/buttons/under-construction.gif" title="site always under construction">
+        </span>
+
+        <span class="motion-toggle">
+        <a class="click" href="https://donatemask.ca/request/" target="_blank;">
+            <img class="button" id="maskup" src="https://lichenthropic.neocities.org/images/buttons/button-maskup-pink.gif" title="Link for FREE MASKS in Canada!!!" alt="mask up stay safe">
+        </a>
+        </span>
+
+        <span class="motion-toggle">
+            <img class="button" id="pothead" src="https://lichenthropic.neocities.org/images/buttons/potheadblinky.gif" title="Pothead" alt="A button with a cannabis leaf and the word pot head">
+        </span>
+                
+            <img class="button" id="madefordark" src="https://lichenthropic.neocities.org/images/buttons/dark-mode.gif" title="made for dark mode" alt="made for dark mode">
+        
+        <span class="motion-toggle">
+        <a class="click" href="https://arab.org/click-to-help/palestine/" target="_blank;">
+            <img class="button" id="clicksforpalestine" src="https://lichenthropic.neocities.org/images/buttons/palestine.gif" title="Clicks for Palestine" alt="palestine flag clicks for palestine button with the text from the river to the sea">   
+        </a>
+        </span>
+
+        <span class="motion-toggle">
+            <img class="button" id="fuck-ai" src="https://lichenthropic.neocities.org/images/buttons/fuckai.gif" title="fuck ai" alt="fuck ai button">
+        </span>
+
+        <a href="https://petrapixel.neocities.org/indiewebdb/" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/links/indiewebdb.png" alt="indie web database">
+        </a>
+</div>
+
+<div class="container" id="redacted">
+
+    <h2 style="text-align:center;">
+        [TOP SECRET]
+    </h2>
+         <a class="click" href="https://lichenthropic.neocities.org/pages/OnePot.html" onClick="return popup(this, 'OnePot')">
+            <img class="no-click" src="https://lichenthropic.neocities.org/images/buttons/dont-click-here.gif" alt="do-not-click">
+        </a>
+</div>
+</div>

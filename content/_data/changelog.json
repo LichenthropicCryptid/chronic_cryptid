@@ -1,0 +1,111 @@
+[
+
+  { "date": "2026-10-20 2:32am", "text": "fanpage formatting and CSS styling"},
+
+  { "date": "2026-10-26 3:40pm", "text": "importing styles"},
+
+  { "date": "2026-10-25 5:06pm", "text": "importing changelog" },
+
+  { "date": "2026-10-25 3:33pm", "text": "transferring code from flex to grid" },
+
+  { "date": "2026-10-21 2:28pm", "text": "11ty setup" },
+
+  { "date": "2026-10-21 2:27pm", "text": "Bugfixes" },
+
+  { "date": "2026", "text": "updates to mobile responsiveness" },
+
+  { "date": "2026", "text": "FUCK YEAH I KNEW I HAD A BACKUP OF MY TRACKLIST<del>....why tf is the boombox just GONE. my whole playlist too damn. alright yall get the og boombox with just my buddy's song for now till i figure this shit out</del>" },
+
+  { "date": "2026", "text": "completely overhaulled my collections page. my stamps, banners, buttons etc are now hosted on a seperate site, which ive placed as an iframe on the collections page to keep my main site a bit lighter! let me know if there are any issues!" },
+
+  { "date": "2026", "text": "SUDOKU ADDED FUCK YEAH" },
+
+  { "date": "2026", "text": "i....i think i finally fixed it all. holy shit hahahha" },
+
+  { "date": "2026", "text": "FUCK I FUCKED Up. trying to move my image file hosting and broke EVERYTHING" },
+
+  { "date": "2026", "text": "unfortunately i havent been able to figure out how to link the GIF freeze button in the access menu to the iframe sidebars, so those each have their own gif freeze button until i figure that out." },
+
+  { "date": "2026", "text": "HEY, LISTEN! <br/>The access fairy has appeared! click on the pink fairy to open the accessability" },
+
+  { "date": "2026", "text": "Accessability features and theme buttons IN PROGRESS. how tf does freezeframe.js work ugh. currently, you have to toggle the sidebar freezeframes seperately, working on a fix, lmk if you know how local-storage shit works" },
+
+  { "date": "2026", "text": "CHECK OUT THE BOOMBOX!" },
+
+  { "date": "2026", "text": "Oop keep forgetting to update this. in the proccess of doing smthg cool with the music player,some basic accessability features, and messing with formatting. Take a look around, and feel free to lmk if you have any suggestions!" },
+
+  { "date": "2026", "text": "PAGE LOADING TRANSITION ADDED. added a pre-loader, so while the Weed Orb spins, the page is loading in the background! this should prevent half loaded pages and flashing between theme switches" },
+
+  { "date": "2026", "text": "somehow fucked up the Links page. been meaning to combine with the credits page anyways but uh....yeah i did that. Credits page is now gone, and has been combined with Links" },
+
+  { "date": "2026", "text": "header updated. not sure if i like it" },
+
+  { "date": "2026", "text": "organized my file garden and had to re-link all my images lmfao oops" },
+
+  { "date": "2026", "text": "swapped status widget for an RSS feed of my StatusCafe status" },
+
+  { "date": "2026", "text": "changed background" },
+
+  { "date": "2026", "text": "adjusted positioning of sidebars" },
+
+  { "date": "2026", "text": "swapped music players" },
+
+  { "date": "2026", "text": "theme picker troubleshooting" },
+
+  { "date": "2026", "text": "mystery page added. definately DONT click the big red button" },
+
+  { "date": "2026", "text": "RSS feed up and running" },
+
+  { "date": "2026", "text": "Blinkies Added" },
+
+  { "date": "2026", "text": "Edited 'links' page, added my Throne wishlist in dropdown" },
+
+  { "date": "2026", "text": "Cursor trail added!" },
+
+  { "date": "2026", "text": "CRT filter toggle added! this one was tough but i think i figured it out! you should be able to click the button that says 'CRT' to turn that filter on and off " },
+
+  { "date": "2026", "text": "Gallery Updated" },
+
+  { "date": "2026", "text": "'BONG BREAK' song by my VERY talented friend Michael Serroul" },
+
+  { "date": "2026", "text": "links added to status box" },
+
+  { "date": "2026", "text": "Mobile view MOSTLY usable! index page enter button looks a little funky still. any advice welcome!" },
+
+  { "date": "2026", "text": "Status box added" },
+
+  { "date": "2026", "text": "'likes' button added" },
+
+  { "date": "2026", "text": "Chat room added" },
+
+  { "date": "2026", "text": "adjusted visitors counter" },
+
+  { "date": "2026", "text": "updated collections" },
+
+  { "date": "2026", "text": "fuck yeah i think i did it i had to add a body and html hidden overflow rule into the css of the sideframes html pages themselves" },
+
+  { "date": "2026", "text": "<strong><del>IF ANYONE HAS ANY CLUES ON HOW TO FIX THAT PLS LMK</del></strong>" },
+
+  { "date": "2026", "text": "<del>left sidebar iframe acting funky. keeps showing a scrollbar and getting weirdly short. gotta figure that out</del>" },
+
+  { "date": "2026", "text": "drew and set up a custom cursor!! :D" },
+  
+  { "date": "2026", "text": "did some sidebar formatting" },
+
+  { "date": "2026", "text": "check out the AERCHIVIST button and go watch my buddy on Twitch!" },
+
+  { "date": "2026", "text": "added some buttons and badges to sidebar" },
+
+  { "date": "2026", "text": "worked on SMOKE ROOM formatting " },
+
+  { "date": "2026", "text": "added scrolling marquee at top of page" },
+
+  { "date": "2026", "text": "fixed mobile layout of index page" },
+
+  { "date": "2026", "text": "changed link and text colours" },
+
+  { "date": "2026", "text": "fixed/adjusted a couple borders" },
+
+  { "date": "2026", "text": "Guestbook added! Link in Left sidebar" }
+
+]

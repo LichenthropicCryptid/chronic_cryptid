@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FANPAGES</title>
+
+        <script src="{{ nesting }}main.js{{ nocache }}"></script>
+
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js{{ nocache }}"></script>
+
+        <script src="https://u.widget.st/ar.js{{ nocache }}"></script>
+        
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+
+        <meta charset="UTF-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link id="structure" rel="stylesheet" href="../assets/style/fanpage.css{{ nocache }}"/>
+
+        <link href="../assets/favicon.ico" rel="icon" type="image/x-icon"/>
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed for my site" href="https://lichenthropic.neocities.org/rss.xml"/>
+
+        <script type="module">  
+            import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+            new fairyDustCursor({
+            colors: ["#70ECFF", "#FF70A4", "#FFE5C9"],
+            fairySymbol: "★",
+            });
+        </script>
+
+        <script type="text/javascript">
+            function popup(mylink, windowname) { 
+                if (! window.focus)return true;
+                var href;
+                if (typeof(mylink) == 'string') href=mylink;
+                else href=mylink.href; 
+                window.open(href, windowname, 'width=700,height=900,scrollbars=no'); 
+            return false; 
+            }
+        </script>
+
+</head>
+<div id="preloader"></div>
+    <body class="crt">
+
+        <header>
+            {% include 'fan-header.njk' %}
+        </header>
+<main>
+
+        <div class="fan-articles">
+
+            <span class="fanpage-article" id="op-article">
+               {% include 'onepiece.njk' %}
+            </span>
+
+            <span class="fanpage-article" id="ae-article">
+                {% include 'aerchivist.njk' %}
+            </span>
+
+            <span class="fanpage-article" id="loz-article">
+                {% include 'zelda.njk' %}
+            </span>
+
+        </div>
+
+</main>
+ <div class="right">
+        <span class="fan-page-nav">
+
+            <button id="op-button">
+                ONE PIECE
+            </button>
+            <script type="text/javascript">
+                $(function() {
+                    $("#op-button").on("click", function() {
+                    $("#op-article").slideDown();
+                    $("#ae-article").slideUp();
+                    $("#loz-article").slideUp();
+                    });
+                });
+            </script>
+
+            <button id="ae-button">
+                AERCHIVIST
+            </button>
+            <script type="text/javascript">
+                $(function() {
+                    $("#ae-button").on("click", function() {
+                        $("#ae-article").slideDown();
+                        $("#op-article").slideUp();
+                        $("#loz-article").slideUp();
+                    });
+                });
+            </script>
+
+            <button id="loz-button">
+                ZELDA
+            </button>
+            <script type="text/javascript">
+                $(function() {
+                    $("#loz-button").on("click", function() {
+                        $("#loz-article").slideDown();
+                        $("#ae-article").slideUp(),
+                        $("#op-article").slideUp();
+                    });
+                });
+            </script>
+
+            <button id="home">
+                <a href="home.html">
+                HOME
+                </a>
+            </button>
+
+        </span>
+        </div>
+    <footer>
+        {% include 'footer.njk' %}
+    </footer>
+
+    <script>
+
+        function crton() {
+            document.getElementById('filter').setAttribute('href', '{{ nesting }}assets/filter/crt-on.css');
+            localStorage.setItem('filter', 'crt-on');
+        }
+
+        function crtoff() {
+            document.getElementById('filter').setAttribute('href', '{{ nesting }}assets/filter/crt-off.css');
+            localStorage.setItem('filter', 'crt-off');
+        }
+
+        if (localStorage.getItem('filter') == 'crt-on') {
+            crton();
+        }
+
+        if (localStorage.getItem('filter') == 'crt-off') {
+            crtoff();
+        }
+
+    </script>
+
+    <script>
+
+        var loader = document.getElementById("preloader");
+
+        function hideLoader() {
+            if (!loader) return;
+            fadeOut();
+        }
+
+        function fadeOut() {
+            var op = 1;
+            var fade = setInterval(function () {
+                op -= 0.1;
+                if (op <= 0) {
+                    clearInterval(fade);
+                    loader.style.display = "none";
+                } else {
+                    loader.style.opacity = op;
+                }
+            }, 40);
+        }
+
+        // Hide once everything has loaded
+            window.addEventListener("load", hideLoader);
+
+        // Force-hide after 8 seconds even if it can't load
+            setTimeout(hideLoader, 8000);
+
+    </script>
+
+    <style>
+
+        #preloader {
+            src: url('../assets/gif/dvdflip.gif');
+            background: black;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            display: flex;
+            position: fixed;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            z-index: 9999;
+        }
+
+    </style>
+
+</body>
+</html>

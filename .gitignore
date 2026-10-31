@@ -1,1 +1,7 @@
 node_modules
+content
+.eleventy.js
+.eleventyignore
+LICHENTHROPIC-11ty.code-workspace
+package-lock.json
+package.json

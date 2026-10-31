@@ -4,7 +4,7 @@
 
     "scripts": {
         "build": "npx @11ty/eleventy",
-        "watch": "npx @11ty/eleventy --watch"
+        "watch": "npx @11ty/eleventy --serve"
     },
 
     "devDependencies": {

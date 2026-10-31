@@ -1,0 +1,75 @@
+
+* {
+    scrollbar-color: #15160b #0d0e07;
+}
+
+::-webkit-scrollbar-track   {
+    background: black;
+}
+                
+::-webkit-scrollbar-thumb {
+    background: #680202;
+    border: .15rem solid #680202;
+}
+                
+::-webkit-scrollbar-thumb:hover {
+    background: #6B0505;
+}
+
+footer a {
+    color: red;
+    background-color: #13092D;
+}
+
+footer a:hover {
+    color: #39af1e;
+    background-color: #050D00;
+    box-shadow: 0 0 .25em 0 limegreen;
+    text-shadow: 2px 2px 2px black;
+}
+
+html {
+    background-image: url('../bg-images/red-space.gif');
+    background-color: #0d0e07;
+    color: #a59778;
+}
+
+header {
+    background-image: url('../bg-images/pixel-brick.png');
+    opacity: 90%;
+    background-color:#22031aeb;
+    color: rgb(175, 139, 118);
+    font-size: 30px;
+}
+
+.nav-item, .hide-gif, .hide-nav {
+    color: #39af1e;
+    background-color: rgb(67, 15, 57);
+    border: 5px outset rgb(67, 15, 57);
+}
+
+.nav-item a {
+    color: #39af1e;
+}
+
+.nav-item a:hover {
+    color: #c35d0e;
+    text-shadow: 2px 2px 2px black;
+}
+
+.nav-item a :active {
+color: red;
+border: inset rgb(67, 15, 57);
+}
+
+h1 {
+    color: #d00000;
+}
+
+h3, h4, h5 {
+    color: #8d0057;
+}
+
+strong {
+    color: #39af1e;
+}

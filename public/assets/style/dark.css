@@ -32,6 +32,24 @@ footer a:hover {
     text-shadow: 2px 2px 2px black;
 }
 
+a {
+    color: red;
+}
+
+a:hover {
+    color: #39af1e;
+    text-shadow: 2px 2px 2px black;
+}
+button {
+    color: #39af1e;
+    
+}
+
+button:hover {
+    color: red;
+    text-shadow: 2px 2px 2px black;
+}
+
 html {
     background-image: url('../bg-images/red-space.gif');
     background-color: #0d0e07;

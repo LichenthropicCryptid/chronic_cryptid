@@ -16,6 +16,10 @@
     background: #6B0505;
 }
 
+footer {
+    background-color: #22030feb;
+}
+
 footer a {
     color: red;
     background-color: #13092D;
@@ -42,6 +46,22 @@ header {
     font-size: 30px;
 }
 
+#center {
+    background-color: #1d0327d2;
+}
+
+#left {
+    background-color: #220311eb;
+}
+
+#right {
+    background-color: #220311eb;
+}
+
+.button-bg {
+    background-color: black;
+}
+
 .nav-item, .hide-gif, .hide-nav {
     color: #39af1e;
     background-color: rgb(67, 15, 57);
@@ -58,8 +78,8 @@ header {
 }
 
 .nav-item a :active {
-color: red;
-border: inset rgb(67, 15, 57);
+    color: red;
+    border: inset rgb(67, 15, 57);
 }
 
 h1 {
@@ -72,4 +92,8 @@ h3, h4, h5 {
 
 strong {
     color: #39af1e;
+}
+
+.box {
+    border: 7.5px solid #060000;
 }

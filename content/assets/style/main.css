@@ -65,7 +65,6 @@ header {
 }
 
 .button-bg {
-    background-color: black;
     width: 80px;
 }
 
@@ -88,25 +87,25 @@ main {
 }
 
 #left {
-    background-color: #220311eb;
+    width: 250px;
+    grid-column: 1;
     padding: 10px;
     border-radius: 2.5px;
 }
 
 #right {
-    background-color: #220311eb;
+    width: 250px;
+    grid-column: 3;
     padding: 10px;
     border-radius: 2.5px;
 }
 
 #center {
-    background-color: #1d0327d2;
     padding: 10px;
     border-radius: 2.5px;
 }
 
 footer {
-    background-color: #22030feb;
     font-size: 14px;
     padding: 2px;
     text-align: center;
@@ -115,10 +114,18 @@ footer {
 }
 
 .chain-border {
-    border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAATNJREFUWEftl+sOgyAMRvH9H3pLlpBIRzlfBRNq3F8dHE8v0KMk+R1JOEsP9LMJfMOWErSarPCqWTV9ous1POdN0oHWFCWz1qRnLPqeXef3/57RdKBXgb2mQcaHz0dG04GqwNH2SzXQ7KsYTQdqgaMG7fuhvhoxui2ol0PqSUTGu/2ylLKsj24D6oHYI5aM0XNaTz7rveRfbVQSo1xKbK7eBepdityz3gOjUFGoKUIvaNTga3SYM7M6T41dqolR1VOoZlmpOJ/TR+lat7qPSvtdmZm2A/Vy8C7Q4X6PuI/aL1RnHLUbqOvhXJ8OlL5czdl3ro+aJGM1lei9ZTOTN40SwHJQMukVGVV7aI63lxZlFCGA2WKi7vLXnig0BLz6eSOgZ0MN0WqwYUqpYbsbCtdPA/oFkHaQK7iAi8QAAAAASUVORK5CYII=') 14 /  14px / 0 round;
+    border-image:  
+        url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAATNJREFUWEftl+sOgyAMRvH9H3pLlpBIRzlfBRNq3F8dHE8v0KMk+R1JOEsP9LMJfMOWErSarPCqWTV9ous1POdN0oHWFCWz1qRnLPqeXef3/57RdKBXgb2mQcaHz0dG04GqwNH2SzXQ7KsYTQdqgaMG7fuhvhoxui2ol0PqSUTGu/2ylLKsj24D6oHYI5aM0XNaTz7rveRfbVQSo1xKbK7eBepdityz3gOjUFGoKUIvaNTga3SYM7M6T41dqolR1VOoZlmpOJ/TR+lat7qPSvtdmZm2A/Vy8C7Q4X6PuI/aL1RnHLUbqOvhXJ8OlL5czdl3ro+aJGM1lei9ZTOTN40SwHJQMukVGVV7aI63lxZlFCGA2WKi7vLXnig0BLz6eSOgZ0MN0WqwYUqpYbsbCtdPA/oFkHaQK7iAi8QAAAAASUVORK5CYII=')
+    14 /  14px / 0 round;
     border-width:  14px;
     border-style:  solid; 
-  }
+}
+
+.box {
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
 
 .container {
     text-align: center;

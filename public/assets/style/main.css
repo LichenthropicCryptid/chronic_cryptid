@@ -63,6 +63,15 @@ header {
     width: 100px;
     margin: 10px;
 }
+.changelog-button {
+    font-family: 'pixel';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2.5px;
+    width: 110px;
+    padding: 0;
+}
 
 .button-bg {
     width: 80px;
@@ -74,7 +83,7 @@ header {
     font-weight: bold;
     text-align: center;
     border-radius: 2.5px;
-    width: 100px;
+    width: 110px;
 }
 
 main {
@@ -144,4 +153,49 @@ footer {
 .motion-button-bg {
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid rgba(0, 0, 0, 0);
+}
+
+#boombox-container {
+    margin-top: 20px;
+    display: flex;
+}
+
+.boombox {
+    position: absolute;
+    right: 75px;
+    z-index: 3;
+    top: 420px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color:rgba(0, 0, 0, 0);
+}
+
+#boombox-button {
+    width: 175px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: transform 0.5s, box-shadow 0.25s, opacity .5s;
+    z-index: 2;
+}
+
+#boombox-button:hover {
+    transform: scale(1.25);
+    box-shadow: 0 0 30px 10px rgb(0, 181, 0);
+    opacity: 100%;
+}
+
+#mp3-boombox {
+    position: absolute;
+    width: 250px;
+}
+
+#clock-container {
+    margin-top: 250px;
+}
+
+.hidden-changelog {
+    display: none;
+    background: rgba(0, 0, 0, 0.326);
+    border-radius: 10px;
+    width: 1fr;
+    margin: 10px;
 }

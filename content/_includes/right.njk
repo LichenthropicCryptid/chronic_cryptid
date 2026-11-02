@@ -1,20 +1,29 @@
 <div class="sidebar">
-<details class="container" id="changelog-container">
-    <summary>
-        <h3 style="text-align:center">CHANGELOG</h3>
-    </summary>
-        <div class="changelog-box">
-            {% include 'changelog.njk' %}
-        </div>
-</details>
+    <div class="container" id="changelog-container">
 
-<div class="container" id="boombox-container">
+        <button class="changelog-button" style="text-align:center">
+            CHANGELOG
+        </button>
 
+            <script type="text/javascript">
+                $(function() {
+                    $(".changelog-button").on("click", function() {
+                    $(".hidden-changelog").slideToggle();
+                    });
+                });
+            </script>        
+                <span class="hidden-changelog">
+                    {% include 'changelog.njk' %}
+                </span>  
+    </div>
     <h2 style="text-align:center;">Tunes</h2>
-        <button class="motion-button-bg" style="text-align:center">
+
+    <div class="container" id="boombox-container">
+
+        <button class="boombox" style="text-align:center" title="click here for music">
             <span class="motion-toggle">
-          <img class="boombox" src="../assets/custom assets/boombox.gif">
-          </span>
+                <img id="boombox-button" src="../assets/custom assets/boombox.gif" alt="button that reads boombox">
+            </span>
         </button>
             <script type="text/javascript">
 

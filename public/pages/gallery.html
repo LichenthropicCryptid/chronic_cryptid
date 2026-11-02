@@ -3,11 +3,11 @@
 <head>
     <title>Gallery</title>
 
-        <script src="../main.js?nocache=1793530338582"></script>
+        <script src="../main.js?nocache=1793609911324"></script>
 
-        <script src="http://code.jquery.com/jquery-2.1.1.min.js?nocache=1793530338582"></script>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js?nocache=1793609911324"></script>
 
-        <script src="https://u.widget.st/ar.js?nocache=1793530338582"></script>
+        <script src="https://u.widget.st/ar.js?nocache=1793609911324"></script>
         
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
 
@@ -15,9 +15,9 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <link id="structure" rel="stylesheet" href="../assets/style/main.css?nocache=1793530338582"/>
+        <link id="structure" rel="stylesheet" href="../assets/style/main.css?nocache=1793609911324"/>
 
-        <link id="colortheme" rel="stylesheet" href="../assets/style/dark.css?nocache=1793530338582"/>
+        <link id="colortheme" rel="stylesheet" href="../assets/style/dark.css?nocache=1793609911324"/>
 
         <link href="../favicon.ico" rel="icon" type="image/x-icon"/>
 
@@ -262,12 +262,21 @@
             <div id="right" class="chain-border">
 
                 <div class="sidebar">
-<details class="container" id="changelog-container">
-    <summary>
-        <h3 style="text-align:center">CHANGELOG</h3>
-    </summary>
-        <div class="changelog-box">
-            <div id="log">
+    <div class="container" id="changelog-container">
+
+        <button class="changelog-button" style="text-align:center">
+            CHANGELOG
+        </button>
+
+            <script type="text/javascript">
+                $(function() {
+                    $(".changelog-button").on("click", function() {
+                    $(".hidden-changelog").slideToggle();
+                    });
+                });
+            </script>        
+                <span class="hidden-changelog">
+                    <div id="log">
   <ul>
     
       <li>2026-11-01:
@@ -560,16 +569,16 @@
     overflow-y: scroll;
   }
 </style>
-        </div>
-</details>
-
-<div class="container" id="boombox-container">
-
+                </span>  
+    </div>
     <h2 style="text-align:center;">Tunes</h2>
-        <button class="motion-button-bg" style="text-align:center">
+
+    <div class="container" id="boombox-container">
+
+        <button class="boombox" style="text-align:center" title="click here for music">
             <span class="motion-toggle">
-          <img class="boombox" src="../assets/custom assets/boombox.gif">
-          </span>
+                <img id="boombox-button" src="../assets/custom assets/boombox.gif" alt="button that reads boombox">
+            </span>
         </button>
             <script type="text/javascript">
 

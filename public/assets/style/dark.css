@@ -80,10 +80,15 @@ header {
     background-color: black;
 }
 
-.nav-item, .hide-gif, .hide-nav {
+.nav-item, .hide-gif, .hide-nav, .changelog-button {
     color: #39af1e;
     background-color: rgb(67, 15, 57);
     border: 5px outset rgb(67, 15, 57);
+}
+
+.changelog-button:hover {
+    color: #d00000;
+    text-shadow: 2px 2px 2px black;
 }
 
 .nav-item a {
@@ -91,12 +96,12 @@ header {
 }
 
 .nav-item a:hover {
-    color: #c35d0e;
+    color: #d00000;
     text-shadow: 2px 2px 2px black;
 }
 
 .nav-item a :active {
-    color: red;
+    color: #d00000;
     border: inset rgb(67, 15, 57);
 }
 

@@ -56,14 +56,6 @@ html {
     color: #a59778;
 }
 
-header {
-    background-image: url('../bg-images/pixel-brick.png');
-    opacity: 90%;
-    background-color:#22031aeb;
-    color: rgb(175, 139, 118);
-    font-size: 30px;
-}
-
 #center {
     background-color: #1d0327d2;
 }

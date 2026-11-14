@@ -3,11 +3,11 @@
 <head>
     <title>Homepage</title>
 
-        <script src="../main.js?nocache=1794609509335"></script>
+        <script src="../main.js?nocache=1794615527201"></script>
 
-        <script src="http://code.jquery.com/jquery-2.1.1.min.js?nocache=1794609509335"></script>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js?nocache=1794615527201"></script>
 
-        <script src="https://u.widget.st/ar.js?nocache=1794609509335"></script>
+        <script src="https://u.widget.st/ar.js?nocache=1794615527201"></script>
         
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
 
@@ -15,9 +15,11 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <link id="structure" rel="stylesheet" href="../assets/style/main.css?nocache=1794609509335"/>
+        <link id="structure" rel="stylesheet" href="../assets/style/main.css?nocache=1794615527201"/>
 
-        <link id="colortheme" rel="stylesheet" href="../assets/style/dark.css?nocache=1794609509335"/>
+        <link id="colortheme" rel="stylesheet" href="../assets/style/dark.css?nocache=1794615527201"/>
+
+        <link id="filter" rel="stylesheet" href="../assets/filter/crt-on.css?nocache=1794615527201"/>
 
         <link href="../favicon.ico" rel="icon" type="image/x-icon"/>
 
@@ -52,6 +54,28 @@
             <div class="header-box">
                 <img id="header-img" src="../assets/custom assets/header.jpg">
 
+            <div class="shake">
+                <div class="container" id="boombox-container">
+
+                    <button class="boombox" style="text-align:center" title="click here for music">
+                        <span class="motion-toggle">
+                            <img id="boombox-button" src="../assets/custom assets/boombox.gif" alt="button that reads boombox">
+                        </span>
+                    </button>
+                    <script type="text/javascript">
+
+                        $(function () {
+                            $(".boombox").on("click", function (e) {
+                            window.open("https://lichenthropic.neocities.org/pages/mp3", "_blank",
+                            "left=-550,top=0,width=600px,height=300px,padding=0");
+                            });
+                        });
+
+                    </script>
+                        <img id="mp3-boombox" src="https://lichenthropic.neocities.org/images/assets/boombox.png" width="100%;">
+                        
+                </div>
+            </div>
             </div>
 
         </header>
@@ -215,9 +239,11 @@
         </span>
 
         <span class="motion-toggle">
+        <div class="shake">
         <a class="click" href="https://donatemask.ca/request/" target="_blank;">
             <img class="button" id="maskup" src="https://lichenthropic.neocities.org/images/buttons/button-maskup-pink.gif" title="Link for FREE MASKS in Canada!!!" alt="mask up stay safe">
         </a>
+        </div>
         </span>
 
         <span class="motion-toggle">
@@ -227,18 +253,23 @@
             <img class="button" id="madefordark" src="https://lichenthropic.neocities.org/images/buttons/dark-mode.gif" title="made for dark mode" alt="made for dark mode">
         
         <span class="motion-toggle">
-        <a class="click" href="https://arab.org/click-to-help/palestine/" target="_blank;">
+        <div class="shake">
+            <a class="click" href="https://arab.org/click-to-help/palestine/" target="_blank;">
             <img class="button" id="clicksforpalestine" src="https://lichenthropic.neocities.org/images/buttons/palestine.gif" title="Clicks for Palestine" alt="palestine flag clicks for palestine button with the text from the river to the sea">   
-        </a>
+            </a>
+        </div>
         </span>
 
         <span class="motion-toggle">
             <img class="button" id="fuck-ai" src="https://lichenthropic.neocities.org/images/buttons/fuckai.gif" title="fuck ai" alt="fuck ai button">
         </span>
-
+        <span class="motion-toggle">
+        <div class="shake">
         <a href="https://petrapixel.neocities.org/indiewebdb/" target="_blank">
             <img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/links/indiewebdb.png" alt="indie web database">
         </a>
+        </div>
+        </span>
 </div>
 
 <div class="container" id="redacted">
@@ -246,9 +277,11 @@
     <h2 style="text-align:center;">
         [TOP SECRET]
     </h2>
+    <div class="shake" id="dont-click-button">
          <a class="click" href="https://lichenthropic.neocities.org/pages/OnePot.html" onClick="return popup(this, 'OnePot')">
             <img class="no-click" src="https://lichenthropic.neocities.org/images/buttons/dont-click-here.gif" alt="do-not-click">
         </a>
+    </div>
 </div>
 </div>
             </div>
@@ -598,39 +631,21 @@
 <style>
   li {
     list-style: none;
-    text-align: left;
     line-height: 1.5;
+    padding: 10px;
   }
 
   #log {
+    align-content: left;
     height: 200px;
     overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: left;
   }
 </style>
                 </span>  
     </div>
-    <h2 style="text-align:center;">Tunes</h2>
-
-    <div class="container" id="boombox-container">
-
-        <button class="boombox" style="text-align:center" title="click here for music">
-            <span class="motion-toggle">
-                <img id="boombox-button" src="../assets/custom assets/boombox.gif" alt="button that reads boombox">
-            </span>
-        </button>
-            <script type="text/javascript">
-
-                $(function () {
-                    $(".boombox").on("click", function (e) {
-                        window.open("https://lichenthropic.neocities.org/pages/mp3", "_blank",
-                        "left=-550,top=0,width=600px,height=300px,padding=0");
-                     });
-                 });
-
-            </script>
-        <img id="mp3-boombox" src="https://lichenthropic.neocities.org/images/assets/boombox.png" width="100%;">
-                        
-</div>
+    
 
 <div class="container" id="clock-container">
 

@@ -299,7 +299,7 @@ summary {
 
 }
 
-.accessability {
+.accessability-fairy {
     margin: 5rem;
     grid-area: accessability;
     background-color: rgba(0, 187, 255, 0.542);
@@ -310,13 +310,13 @@ summary {
     animation: pulse 1.5s infinite;
 }
 
-#accessability {
+#accessability-fairy {
     margin: 3rem;
     margin-left: 5rem;
     margin-top: 5rem;
     scale: 2.5;
 }
-.accessability:hover {
+.accessability-fairy:hover {
     cursor: url('../cursors/cursor-pink.png');
 }
 

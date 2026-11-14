@@ -201,20 +201,20 @@ footer {
     border: 2px solid rgba(0, 0, 0, 0);
 }
 
-#boombox {
-    position: absolute;
-    z-index: 4;
-    background-color: rgba(0, 0, 0, 0);
-    border-color:rgba(0, 0, 0, 0);
-    margin-left: 7.5px;
-    margin-top: -5rem;
+.boombox {
+   background-color: rgba(0, 0, 0, 0);
+   border: rgba(0, 0, 0, 0)
+}
+.boombox:hover {
+   background-color: rgba(0, 0, 0, 0);
+   border: rgba(0, 0, 0, 0)
 }
 
-#boombox:hover {
-    cursor: url('../cursors/cursor-pink.png'), auto;
-}
 
 #boombox-button {
+    margin-top: -100%;
+    margin-bottom: 50%;
+    margin-left: 125%;
     width: 175px;
     border-radius: 3px;
     opacity: 0;

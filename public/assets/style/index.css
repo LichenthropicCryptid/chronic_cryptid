@@ -1,17 +1,16 @@
 @font-face {
     font-family: "punkTypewriter";
-    src: 
-        url('../fonts/PunkTypewriter.otf') format('OpenType');
+    src: url('../fonts/PunkTypewriter.otf') format('OpenType');
 }
 
 @font-face {
     font-family: "pixel";
-    src: 
-        url('../fonts/PixelSplitter-Bold.ttf') format('Truetype');
+    src: url('../fonts/PixelSplitter-Bold.ttf') format('Truetype');
 }
 
 html {
-       cursor: url('../cursors/cursor.png');
+    cursor: url('../cursors/cursor.png');
+    background-color: rgb(26, 22, 22);
 }
 
 body {
@@ -31,7 +30,7 @@ body {
     gap: 10px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "accessability . . . ."
+        "accessability accessability . . ."
         ". . welcome . ."
         ". . enter . ."
         ". . enter . ."
@@ -42,9 +41,12 @@ body {
 }
 
 .accessability {
+    margin: 5rem;
     grid-area: accessability;
     background-color: rgba(0, 187, 255, 0.542);
     box-shadow: 0px 0px 50px 21px rgba(0, 187, 255, 0.738);
+    width: 12.5rem;
+    height: 13rem;
     border-radius: 5rem;
     animation: pulse 1.5s infinite;
 }
@@ -67,13 +69,14 @@ body {
     font-size: 90px;
     grid-area: welcome;
     background-image: url('../bg-images/pixel-brick.png');
-    margin-top: -10rem;
-    margin-bottom: 5rem;
+    margin-top: -22rem;
+    margin-bottom: 15rem;
     border: 0.5rem outset rgb(94, 7, 7);
 }
 
 .enter {
     grid-area: enter;
+    margin-top: -7.5rem;
 }
 
 #enter-button {

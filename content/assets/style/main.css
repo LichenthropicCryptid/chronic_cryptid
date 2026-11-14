@@ -244,6 +244,10 @@ footer {
     margin-bottom: -75px;
 }
 
+.web-rings {
+    margin: 2.25rem;
+}
+
 .hidden-changelog {
     display: none;
     background: rgba(0, 0, 0, 0.326);

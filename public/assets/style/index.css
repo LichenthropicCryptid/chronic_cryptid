@@ -1,5 +1,5 @@
 * {
-    cursor: url('{{ nesting }}assets/cursors/cursor.png');
+    cursor: url('../cursors/cursor.png');
 }
 
 body {
@@ -48,7 +48,9 @@ body {
 .welcome {
     grid-area: welcome;
     background-image: url('../bg-images/pixel-brick.png');
-    background-color:rgb(97, 14, 106);
+    height: 5rem;
+    margin-top: -5rem;
+    border: 0.5rem outset rgb(94, 7, 7);
 }
 
 .enter {
@@ -57,13 +59,13 @@ body {
 
 #enter-button {
     scale: 4;
-    margin: 5rem;
+    margin: 3rem;
     background-color: rgb(0, 0, 0);
     border: .15rem outset rgb(72, 24, 24);
     border-radius: 1px;
 }
 #enter-button:hover {
-    cursor: url('{{ nesting }}assets/cursors/cursor-pink.png')
+    cursor: url('../cursors/cursor-pink.png');
 }
 #enter-button:active {
     border: .15rem inset rgb(70, 12, 12);
@@ -71,7 +73,8 @@ body {
 
 .cw {
     grid-area: cw;
-    background-color:rgb(0, 111, 139);
+    background-image: url('../bg-images/pixel-brick.png');
+    border: 0.5rem outset rgb(94, 7, 7);
 }
 
 footer {

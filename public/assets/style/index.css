@@ -1,3 +1,7 @@
+* {
+    cursor: url('{{ nesting }}assets/cursors/cursor.png');
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -7,7 +11,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    cursor: url('../cursors/cursor.png');
     display: grid;
     grid-template-columns: 0.5fr 1fr 2fr 1fr 0.5fr;
     grid-template-rows: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 0.5fr;
@@ -21,34 +24,51 @@ body {
         ". . cw . ."
         ". . cw . ."
         ". . . . ."
-        ". . footer . .";
+        "footer footer footer footer footer";
 }
 
 .accessability {
     grid-area: accessability;
-
 }
 
 #accessability {
     margin: 3rem;
     scale: 2.5;
 }
-#accessability:hover {
+.accessability:hover {
     cursor: url('../cursors/cursor-pink.png');
 }
 
 .welcome {
     grid-area: welcome;
+    background-image: url('../bg-images/pixel-brick.png');
+    background-color:rgb(97, 14, 106);
 }
 
 .enter {
     grid-area: enter;
 }
 
+#enter-button {
+    scale: 4;
+    margin: 5rem;
+    background-color: rgb(0, 0, 0);
+    border: .15rem outset rgb(72, 24, 24);
+    border-radius: 1px;
+}
+#enter-button:hover {
+    cursor: url('{{ nesting }}assets/cursors/cursor-pink.png')
+}
+#enter-button:active {
+    border: .15rem inset rgb(70, 12, 12);
+}
+
 .cw {
     grid-area: cw;
+    background-color:rgb(0, 111, 139);
 }
 
 footer {
     grid-area: footer;
+    background-color:rgb(35, 35, 69);
 }

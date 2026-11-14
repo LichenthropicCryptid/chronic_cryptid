@@ -18,7 +18,7 @@ body {
     color: rgb(194, 183, 161);
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
     background-image: url('../custom-assets/index-bg.JPG');
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,16 +26,16 @@ body {
     text-align: center;
     display: grid;
     grid-template-columns: 0.5fr 1fr 2fr 1fr 0.5fr;
-    grid-template-rows: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px 0px;
     grid-auto-flow: row;
     grid-template-areas:
         "accessability accessability . . ."
-        ". . welcome . ."
-        ". . enter . ."
-        ". . enter . ."
-        ". . cw . ."
-        ". . cw . ."
+        ". . welcome right-bar right-bar"
+        ". . enter right-bar right-bar"
+        ". . enter right-bar right-bar"
+        "left-box left-box cw right-bar right-bar"
+        "left-box left-box cw right-bar right-bar"
         ". . . . ."
         "footer footer footer footer footer";
 }
@@ -103,9 +103,35 @@ body {
     border: 0.5rem outset rgb(94, 7, 7);
 }
 
+.right-bar {
+    margin: 1rem;
+    margin-top: -23rem;
+    margin-bottom: 0rem;
+    grid-area: right-bar;
+    padding: 1rem;
+    background-image: url('../bg-images/teal-tile.jpeg');
+}
+
+.left-box {
+    grid-area: left-box;
+    margin: 1rem;
+    margin-bottom: 0;
+    padding: 1rem;
+    background-image: url('../bg-images/teal-tile.jpeg');
+}
+
 footer {
     grid-area: footer;
-    background-color:rgb(35, 35, 69);
+    background-color:rgb(5, 0, 16);
+    margin-top: -.75rem;
+}
+
+#chain-border {
+    border-image:  
+        url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAATNJREFUWEftl+sOgyAMRvH9H3pLlpBIRzlfBRNq3F8dHE8v0KMk+R1JOEsP9LMJfMOWErSarPCqWTV9ous1POdN0oHWFCWz1qRnLPqeXef3/57RdKBXgb2mQcaHz0dG04GqwNH2SzXQ7KsYTQdqgaMG7fuhvhoxui2ol0PqSUTGu/2ylLKsj24D6oHYI5aM0XNaTz7rveRfbVQSo1xKbK7eBepdityz3gOjUFGoKUIvaNTga3SYM7M6T41dqolR1VOoZlmpOJ/TR+lat7qPSvtdmZm2A/Vy8C7Q4X6PuI/aL1RnHLUbqOvhXJ8OlL5czdl3ro+aJGM1lei9ZTOTN40SwHJQMukVGVV7aI63lxZlFCGA2WKi7vLXnig0BLz6eSOgZ0MN0WqwYUqpYbsbCtdPA/oFkHaQK7iAi8QAAAAASUVORK5CYII=')
+    14 /  14px / 0 round;
+    border-width:  10px;
+    border-style:  solid;
 }
 
 @keyframes pulse {

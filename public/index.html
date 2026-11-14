@@ -1,1 +1,162 @@
-<a href="https://lichenthropic.neocities.org/pages/home">HOME</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>INDEX</title>
+
+        <script src="../main.js?nocache=1794640019913"></script>
+
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js?nocache=1794640019913"></script>
+
+        <script src="https://u.widget.st/ar.js?nocache=1794640019913"></script>
+        
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+
+        <meta charset="UTF-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link id="structure" rel="stylesheet" href="../assets/style/index.css?nocache=1794640019913"/>
+
+        <link href="../assets/favicon/favicon.ico" rel="icon" type="image/x-icon"/>
+
+        <link rel="alternate" type="application/rss+xml" title="RSS feed for my site" href="https://lichenthropic.neocities.org/rss.xml"/>
+
+        <script type="module">  
+            import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+            new fairyDustCursor({
+             colors: ["#70ECFF", "#FF70A4", "#FFE5C9"],
+            fairySymbol: "★",
+            });
+        </script>
+
+        <script type="text/javascript">
+            function popup(mylink, windowname) { 
+                if (! window.focus)return true;
+                var href;
+                if (typeof(mylink) == 'string') href=mylink;
+                else href=mylink.href; 
+                window.open(href, windowname, 'width=700,height=900,scrollbars=no'); 
+            return false; 
+            }
+        </script>
+
+</head>
+
+<div id="preloader"></div>
+    <body class="crt">
+
+        <main>
+            <div id="welcome">WELCOME</div>
+<div id="enter">
+<a href="https://lichenthropic.neocities.org/pages/home">ENTER</a>
+</div>
+<div id="content-warnings">CONTENT WARNINGS</div>
+        </main>
+    <footer>
+        <div id="footer">2026 | 
+<a href="html://lichenthropic.neocities.org" title="webmaster: lichenthropic" alt="link to the webmaster at lichenthropic.neocities.org" target="_blank">
+    Lichenthropic
+</a>
+</div>
+<style>
+#footer {
+    padding: 5px;
+}
+</style>   
+    </footer>
+
+    <script>
+
+        function crton() {
+            document.getElementById('filter').setAttribute('href', '../assets/filter/crt-on.css');
+            localStorage.setItem('filter', 'crt-on');
+        }
+
+        function crtoff() {
+            document.getElementById('filter').setAttribute('href', '../assets/filter/crt-off.css');
+            localStorage.setItem('filter', 'crt-off');
+        }
+
+        if (localStorage.getItem('filter') == 'crt-on') {
+            crton();
+        }
+
+        if (localStorage.getItem('filter') == 'crt-off') {
+            crtoff();
+        }
+
+    </script>
+
+    <script>
+
+        function lightmode() {
+            document.getElementById('colortheme').setAttribute('href', '../assets/style/light.css');
+            localStorage.setItem('theme', 'lightmode');
+        }
+
+        function darkmode() {
+            document.getElementById('colortheme').setAttribute('href', '../assets/style/dark.css');
+            localStorage.setItem('theme', 'darkmode');
+        }
+
+        if (localStorage.getItem('theme') == 'lightmode') {
+            lightmode();
+        }
+
+        if (localStorage.getItem('theme') == 'darkmode') {
+            darkmode();
+        }
+
+    </script>
+
+    <script>
+
+        var loader = document.getElementById("preloader");
+
+        function hideLoader() {
+            if (!loader) return;
+            fadeOut();
+        }
+
+        function fadeOut() {
+            var op = 1;
+            var fade = setInterval(function () {
+                op -= 0.1;
+                if (op <= 0) {
+                    clearInterval(fade);
+                    loader.style.display = "none";
+                } else {
+                    loader.style.opacity = op;
+                }
+            }, 40);
+        }
+
+        // Hide once everything has loaded
+            window.addEventListener("load", hideLoader);
+
+        // Force-hide after 8 seconds even if it can't load
+            setTimeout(hideLoader, 8000);
+
+    </script>
+
+    <style>
+
+        #preloader {
+            src: url('../assets/gif/dvdflip.gif');
+            background: black;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            display: flex;
+            position: fixed;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            z-index: 9999;
+        }
+
+    </style>
+
+</body>
+</html>

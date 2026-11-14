@@ -8,12 +8,12 @@
 }
                 
 ::-webkit-scrollbar-thumb {
-    background: #680202;
-    border: .15rem solid #680202;
+    background: #a03;
+    border: .15rem solid #a03;
 }
                 
 ::-webkit-scrollbar-thumb:hover {
-    background: #6B0505;
+    background: #a03;
 }
 
 footer {
@@ -21,7 +21,7 @@ footer {
 }
 
 footer a {
-    color: red;
+    color: #a03;
     background-color: #13092D;
 }
 
@@ -33,7 +33,7 @@ footer a:hover {
 }
 
 a {
-    color: red;
+    color: #a03;
 }
 
 a:hover {
@@ -46,7 +46,7 @@ button {
 }
 
 button:hover {
-    color: red;
+    color: #a03;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -72,23 +72,43 @@ html {
     background-color: black;
 }
 
-.nav-item, .hide-gif, .hide-nav, .changelog-button {
-    color: #39af1e;
+
+button {
+    color: #4a9701;
     background-color: rgb(67, 15, 57);
     border: 5px outset rgb(67, 15, 57);
 }
 
-.changelog-button:hover {
-    color: #d00000;
+
+button:hover {
+    color: #a03;
+    background-color:  #306400;
+    border: 5px outset #306400;
     text-shadow: 2px 2px 2px black;
 }
 
-.nav-item a {
-    color: #39af1e;
+.header-summary {
+    color: #4a9701;
+    background-color: rgb(67, 15, 57);
+    border: 5px outset rgb(67, 15, 57);
+}
+
+.header-summary:hover {
+    color: #a03;
+    background-color:  #306400;
+    border: 5px outset #306400;
+    text-shadow: 2px 2px 2px black;
+}
+.nav-item a{
+    color: #4a9701;
+    background-color: rgb(67, 15, 57);
+    border: 5px outset rgb(67, 15, 57);
 }
 
 .nav-item a:hover {
-    color: #d00000;
+    color: #a03;
+    background-color:  #306400;
+    border: 5px outset #306400;
     text-shadow: 2px 2px 2px black;
 }
 

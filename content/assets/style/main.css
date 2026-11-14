@@ -20,8 +20,21 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    cursor: url('../cursors/cursor-pink.png'), auto;
+}
+
+li a:hover {
+    cursor: url('../cursors/cursor-pink.png'), auto;
+}
+
 footer a:hover {
     text-decoration:underline;
+    cursor: url('../cursors/cursor-pink.png'), auto;
+}
+
+button:hover {
+    cursor: url('../cursors/cursor-pink.png'), auto;
 }
 
 body {
@@ -29,6 +42,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 100% .25fr;
+    cursor: url('../cursors/cursor.png'), auto;
 }
 
 header {
@@ -45,8 +59,8 @@ header {
 #header-img {
     height: 10rem;
     border-radius: 15px;
-    margin-top: 5px;
-    margin-bottom: 1px;
+    margin-top: 25px;
+    margin-bottom: 0px;
     border: outset 5px rgba(113, 3, 36, 0.307);
     box-shadow: 0px 2.5px 10px 10px rgba(0, 0, 0, 0.519);
 }
@@ -65,11 +79,19 @@ header {
     padding-right: 40px;
 }
 
+.menu-toggle:hover {
+    cursor: url('../cursors/cursor-pink.png'), auto;
+}
+
 #accessability {
     list-style: none;
     display: grid;
     grid-template-rows: 32.5px 32.5px;
     gap: 15px;
+}
+
+#accessability:hover {
+    cursor: url('../cursors/cursor-pink.png'), auto;
 }
 
 .nav-item {
@@ -78,6 +100,11 @@ header {
     width: 100px;
     margin: 10px;
 }
+
+.nav-item:hover {
+    cursor: url('../cursors/cursor-pink.png'), auto;
+}
+
 .changelog-button {
     font-family: 'pixel';
     font-size: 16px;
@@ -86,6 +113,10 @@ header {
     border-radius: 2.5px;
     width: 110px;
     padding: 0;
+}
+
+.changelog-button:hover {
+    cursor: url('../cursors/cursor-pink.png'), auto;
 }
 
 .button-bg {
@@ -141,8 +172,8 @@ footer {
     border-image:  
         url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAATNJREFUWEftl+sOgyAMRvH9H3pLlpBIRzlfBRNq3F8dHE8v0KMk+R1JOEsP9LMJfMOWErSarPCqWTV9ous1POdN0oHWFCWz1qRnLPqeXef3/57RdKBXgb2mQcaHz0dG04GqwNH2SzXQ7KsYTQdqgaMG7fuhvhoxui2ol0PqSUTGu/2ylLKsj24D6oHYI5aM0XNaTz7rveRfbVQSo1xKbK7eBepdityz3gOjUFGoKUIvaNTga3SYM7M6T41dqolR1VOoZlmpOJ/TR+lat7qPSvtdmZm2A/Vy8C7Q4X6PuI/aL1RnHLUbqOvhXJ8OlL5czdl3ro+aJGM1lei9ZTOTN40SwHJQMukVGVV7aI63lxZlFCGA2WKi7vLXnig0BLz6eSOgZ0MN0WqwYUqpYbsbCtdPA/oFkHaQK7iAi8QAAAAASUVORK5CYII=')
     14 /  14px / 0 round;
-    border-width:  14px;
-    border-style:  solid; 
+    border-width:  10px;
+    border-style:  solid;
 }
 
 .box {
@@ -170,13 +201,17 @@ footer {
     border: 2px solid rgba(0, 0, 0, 0);
 }
 
-.boombox {
+#boombox {
     position: absolute;
     z-index: 4;
     background-color: rgba(0, 0, 0, 0);
     border-color:rgba(0, 0, 0, 0);
     margin-left: 7.5px;
     margin-top: -5rem;
+}
+
+#boombox:hover {
+    cursor: url('../cursors/cursor-pink.png'), auto;
 }
 
 #boombox-button {
@@ -188,6 +223,7 @@ footer {
 }
 
 #boombox-button:hover {
+    cursor: url('../cursors/cursor-pink.png'), auto;
     transform: scale(1.25);
     box-shadow: 0 0 30px 10px rgb(0, 181, 0);
     opacity: 100%;
@@ -199,23 +235,8 @@ footer {
     margin-top: -10rem;
 }
 
-.shake:hover {
-    animation: shake 1s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+#mp3-boombox:hover {
+    cursor: url('../cursors/cursor-pink.png'), auto;
 }
 
 #clock-container {
@@ -234,12 +255,71 @@ footer {
 .zodiac-box {
     padding: 10px;
 }
+
 #dont-click-button {
     margin-left: 5rem;
     width: 88px;
     height: 31px;
-    transition: 0.5s box-shadow;
+    transition: 0.5s box-shadow, 0.25s scale;
 }
+
 #dont-click-button:hover {
     box-shadow: 0px 0px 15px 5px rgb(255, 0, 0);
+    scale: 1.5;
+    cursor: url('../cursors/cursor-pink.png'), auto;
 }
+
+.click {
+    transition: .25s scale;
+}
+
+.click:hover {
+    scale: 1.15;
+    animation: shake .15s;
+    animation-iteration-count: 2.5;
+    cursor: url('../cursors/cursor-pink.png'), auto;
+}
+
+button {
+    width: 88px;
+    height: 31px;
+}
+
+details>::marker{ 
+    display:none; 
+}
+
+summary { 
+    list-style: none }
+
+.header-summary {
+    width: fit-content;
+    margin-top: 10px;
+    height: 40px;
+
+}
+
+/* ANIMATIONS */
+
+ /*SHAKE*/
+
+.shake:hover {
+    animation: shake 1.25s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -1.5px) rotate(-1deg); }
+  20% { transform: translate(-1.5px, 0px) rotate(1deg); }
+  30% { transform: translate(1.5px, 1.5px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 1.5px) rotate(-1deg); }
+  60% { transform: translate(-1.5px, 1px) rotate(0deg); }
+  70% { transform: translate(1.5px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 1.5px) rotate(0deg); }
+  100% { transform: translate(1px, 1px) rotate(0.5deg); }
+}
+
+/*SHAKE*/

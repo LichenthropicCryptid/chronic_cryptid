@@ -1,8 +1,5 @@
-* {
-    cursor: url('../cursors/cursor.png');
-}
-
 body {
+    cursor: url('../cursors/cursor.png');
     height: 100vh;
     width: 100vw;
     overflow: hidden;

@@ -309,7 +309,7 @@ summary {
     height: 6rem;
     animation: pulse 1.5s infinite;
     z-index: 5;
-    transition: 1.5s box-shadow;
+    transition: 0.5s box-shadow;
 }
 
 #accessability-fairy {

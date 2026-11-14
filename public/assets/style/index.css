@@ -1,5 +1,22 @@
+@font-face {
+    font-family: "punkTypewriter";
+    src: 
+        url('../fonts/PunkTypewriter.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: "pixel";
+    src: 
+        url('../fonts/PixelSplitter-Bold.ttf') format('Truetype');
+}
+
+html {
+       cursor: url('../cursors/cursor.png');
+}
+
 body {
-    cursor: url('../cursors/cursor.png');
+    font-family: "pixel";
+    color: rgb(194, 183, 161);
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -43,10 +60,15 @@ body {
 }
 
 .welcome {
+    color: rgb(160, 0, 70);
+    text-shadow: -1px -1px 1px rgba(255, 0, 0, 0.482), 1px 1px 1px rgba(0,0,0,.5), 2px 6px 7px #000000;
+    align-content: center;
+    font-family: "punkTypewriter";
+    font-size: 90px;
     grid-area: welcome;
     background-image: url('../bg-images/pixel-brick.png');
-    height: 5rem;
-    margin-top: -5rem;
+    margin-top: -10rem;
+    margin-bottom: 5rem;
     border: 0.5rem outset rgb(94, 7, 7);
 }
 
@@ -56,7 +78,7 @@ body {
 
 #enter-button {
     scale: 4;
-    margin: 3rem;
+    margin: 0 auto;
     background-color: rgb(0, 0, 0);
     border: .15rem outset rgb(72, 24, 24);
     border-radius: 1px;
@@ -69,6 +91,10 @@ body {
 }
 
 .cw {
+    height: 10rem;
+    padding: 1rem;
+    line-height: 2;
+    text-shadow: 5px 5px 3px #000000;
     grid-area: cw;
     background-image: url('../bg-images/pixel-brick.png');
     border: 0.5rem outset rgb(94, 7, 7);

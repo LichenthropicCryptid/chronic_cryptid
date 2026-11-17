@@ -1,3 +1,133 @@
-body {
-    background-image: url('{{ nesting }}assets/bg-images/moss-brick.jpg');
+* {
+    scrollbar-color: #15160b #0d0e07;
+}
+
+::-webkit-scrollbar-track   {
+    background: black;
+}
+                
+::-webkit-scrollbar-thumb {
+    background: #a03;
+    border: .15rem solid #a03;
+}
+                
+::-webkit-scrollbar-thumb:hover {
+    background: #a03;
+}
+
+footer {
+    background-color: #22030feb;
+}
+
+footer a {
+    color: #a03;
+    background-color: #13092D;
+}
+
+footer a:hover {
+    color: #39af1e;
+    background-color: #050D00;
+    box-shadow: 0 0 .25em 0 limegreen;
+    text-shadow: 2px 2px 2px black;
+}
+
+a {
+    color: #a03;
+}
+
+a:hover {
+    color: #39af1e;
+    text-shadow: 2px 2px 2px black;
+}
+button {
+    color: #39af1e;
+    
+}
+
+button:hover {
+    color: #a03;
+    text-shadow: 2px 2px 2px black;
+}
+
+html {
+    background-image: url('../bg-images/moss-brick.jpg');
+    background-color: #cdc3b9;
+    color: #303030;
+}
+
+#center {
+    background-color: #8639a4d2;
+}
+
+#left {
+    background-color: #892753eb;
+}
+
+#right {
+    background-color: #892753eb;
+}
+
+.button-bg {
+    background-color: black;
+}
+
+
+button {
+    color: #4a9701;
+    background-color: rgb(130, 38, 111);
+    border: 5px outset rgb(130, 38, 111);
+}
+
+
+button:hover {
+    color: rgb(172, 59, 93);
+    background-color:  #65913c;
+    border: 5px outset #306400;
+    text-shadow: 2px 2px 2px black;
+}
+
+.header-summary {
+    color: #4a9701;
+    background-color: rgb(67, 15, 57);
+    border: 5px outset rgb(67, 15, 57);
+}
+
+.header-summary:hover {
+    color: #a03;
+    background-color:  #306400;
+    border: 5px outset #306400;
+    text-shadow: 2px 2px 2px black;
+}
+.nav-item a{
+    color: #4a9701;
+    background-color: rgb(67, 15, 57);
+    border: 5px outset rgb(67, 15, 57);
+}
+
+.nav-item a:hover {
+    color: #a03;
+    background-color:  #306400;
+    border: 5px outset #306400;
+    text-shadow: 2px 2px 2px black;
+}
+
+.nav-item a :active {
+    color: #d00000;
+    border: inset rgb(67, 15, 57);
+}
+
+h1 {
+    color: #d00000;
+}
+
+h3, h4, h5 {
+    color: #8d0057;
+}
+
+strong {
+    color: #39af1e;
+}
+
+.box {
+    border: 7.5px solid #060000;
 }

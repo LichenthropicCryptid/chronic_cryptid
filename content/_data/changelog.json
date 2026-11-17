@@ -1,4 +1,6 @@
 [
+  { "date": "2026-11-16 10:25pm", "text": "accessability menu styling/functionality"},
+
   { "date": "2026-11-14 5:13am", "text": "complete site overhaul.  changed display from flex to grid, implemented 11ty site on neocities, worked on formatting index page"},
 
   { "date": "2026-11-01 8:43pm", "text": "formatting and page additions"},

@@ -1,0 +1,62 @@
+
+.accessability-fairy {
+    position: fixed;
+    margin: 2rem;
+    background-color: rgba(0, 187, 255, 0.542);
+    box-shadow: 0px 0px 50px 21px rgba(0, 187, 255, 0.738);
+    border-radius: 5rem;
+    width: 5rem;
+    height: 5.5rem;
+    z-index: 5;
+    transition: 1s box-shadow;
+}
+
+#accessability-fairy {
+    margin: 1rem;
+    scale: 1.5;
+}
+
+#accessability-fairy:hover {
+    cursor: url('../cursors/cursor-pink.png');
+}
+
+.accessability-fairy:hover {
+    box-shadow: 0px 0px 50px 50px rgba(0, 187, 255, 0.529);
+    
+}
+
+.access-menu {
+    display: none;
+    background: rgb(34, 30, 30);
+    width: 12rem;
+    height: 10rem;
+    border-radius: 5px;
+    border: 7.5px outset rgb(70, 52, 56);
+    margin-left: -2.5rem;
+}
+
+.access-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: solid rgba(0, 0, 0, 0);
+    z-index: 5;
+    animation: pulse 1.5s infinite;
+}
+.access-button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border: solid rgba(0, 0, 0, 0);
+    animation: navi 2s infinite;
+}
+
+@keyframes navi {
+  0% { transform: translate(1px, 1px) rotate(0deg) scale(1); }
+  10% { transform: translate(-1px, -1.5px) rotate(-1deg) scale(1.005); }
+  20% { transform: translate(-1.5px, 0px) rotate(1deg) scale (1.010); }
+  30% { transform: translate(1.5px, 1.5px) rotate(0deg) scale(1.015); }
+  40% { transform: translate(1px, -1px) rotate(1deg) scale(1.020); }
+  50% { transform: translate(-1px, 1.5px) rotate(-1deg) scale(1.025); }
+  60% { transform: translate(-1.5px, 1px) rotate(0deg) scale(1.020); }
+  70% { transform: translate(1.5px, 1px) rotate(-1deg) scale(1.015); }
+  80% { transform: translate(-1px, -1px) rotate(1deg) scale(1.010); }
+  90% { transform: translate(1px, 1.5px) rotate(0deg) scale(1.005); }
+  100% { transform: translate(1px, 1px) rotate(0.5deg) scale(1); }
+}

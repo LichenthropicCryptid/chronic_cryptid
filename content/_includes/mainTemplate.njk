@@ -17,7 +17,9 @@
 
         <link id="structure" rel="stylesheet" href="{{ nesting }}assets/style/main.css{{ nocache }}"/>
 
-        <link id="colortheme" rel="stylesheet" href="{{ nesting }}assets/style/dark.css{{ nocache }}"/>
+        <link id="access-menu" rel="stylesheet" href="{{ nesting }}assets/style/access-menu.css{{ nocache }}"/>
+
+        <link id="theme" rel="stylesheet" href="{{ nesting }}assets/style/dark.css{{ nocache }}"/>
 
         <link id="filter" rel="stylesheet" href="{{ nesting }}assets/filter/crt-on.css{{ nocache }}"/>
 
@@ -84,48 +86,46 @@
         </footer>
 
     <script>
+                function crton() {
+                    document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/assets/filter/crt-on.css');
+                    localStorage.setItem('filter', 'crt-on');
+                }
 
-        function crton() {
-            document.getElementById('filter').setAttribute('href', '{{ nesting }}assets/filter/crt-on.css');
-            localStorage.setItem('filter', 'crt-on');
-        }
+                function crtoff() {
+                    document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/assets/filter/crt-off.css');
+                    localStorage.setItem('filter', 'crt-off');
+                }
 
-        function crtoff() {
-            document.getElementById('filter').setAttribute('href', '{{ nesting }}assets/filter/crt-off.css');
-            localStorage.setItem('filter', 'crt-off');
-        }
+                if (localStorage.getItem('filter') == 'crt-on') {
+                    crton();
+                }
 
-        if (localStorage.getItem('filter') == 'crt-on') {
-            crton();
-        }
+                if (localStorage.getItem('filter') == 'crt-off') {
+                    crtoff();
+                }
 
-        if (localStorage.getItem('filter') == 'crt-off') {
-            crtoff();
-        }
+            </script>
+            <script>
 
-    </script>
+                function lightmode() {
+                    document.getElementById('theme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/light.css');
+                    localStorage.setItem('theme', 'lightmode');
+                }
 
-    <script>
+                function darkmode() {
+                    document.getElementById('theme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/dark.css');
+                    localStorage.setItem('theme', 'darkmode');
+                }
 
-        function lightmode() {
-            document.getElementById('colortheme').setAttribute('href', '{{ nesting }}assets/style/light.css');
-            localStorage.setItem('theme', 'lightmode');
-        }
+                if (localStorage.getItem('theme') == 'lightmode') {
+                    lightmode();
+                }
 
-        function darkmode() {
-            document.getElementById('colortheme').setAttribute('href', '{{ nesting }}assets/style/dark.css');
-            localStorage.setItem('theme', 'darkmode');
-        }
+                if (localStorage.getItem('theme') == 'darkmode') {
+                    darkmode();
+                }
 
-        if (localStorage.getItem('theme') == 'lightmode') {
-            lightmode();
-        }
-
-        if (localStorage.getItem('theme') == 'darkmode') {
-            darkmode();
-        }
-
-    </script>
+            </script>
 
     <script>
 

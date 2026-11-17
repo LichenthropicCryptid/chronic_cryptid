@@ -27,13 +27,35 @@
 
 .filter {
     margin: .25rem;
+    font-family: 'pixel';
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2.5px;
+    width: 88px;
+    height: 31px;
 }
 .theme {
     margin: .25rem;
+    font-family: 'pixel';
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2.5px;
+    width: 88px;
+    height: 31px;
 }
 .hide-gif {
     margin: .25rem;
+    font-family: 'pixel';
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2.5px;
+    width: 88px;
+    height: 31px;
 }
+
 .access-menu {
     display: none;
     background: rgb(34, 30, 30);

@@ -1,14 +1,14 @@
 * {
-    scrollbar-color: #15160b #0d0e07;
+    scrollbar-color: #626262 #363636;
 }
 
 ::-webkit-scrollbar-track   {
-    background: black;
+    background: rgb(72, 139, 0);
 }
                 
 ::-webkit-scrollbar-thumb {
-    background: #a03;
-    border: .15rem solid #a03;
+    background: rgb(62, 114, 45);
+    border: .15rem solid rgb(178, 47, 148);
 }
                 
 ::-webkit-scrollbar-thumb:hover {
@@ -16,7 +16,7 @@
 }
 
 footer {
-    background-color: #22030feb;
+    background-color: #337200eb;
 }
 
 footer a {
@@ -40,7 +40,7 @@ a:hover {
     text-shadow: 2px 2px 2px black;
 }
 button {
-    color: #39af1e;
+    color: #256a16;
     
 }
 
@@ -52,7 +52,7 @@ button:hover {
 html {
     background-image: url('../bg-images/moss-brick.jpg');
     background-color: #cdc3b9;
-    color: #303030;
+    color: #000000;
 }
 
 #center {
@@ -112,16 +112,16 @@ button:hover {
 }
 
 .nav-item a :active {
-    color: #d00000;
+    color: #b00000;
     border: inset rgb(67, 15, 57);
 }
 
 h1 {
-    color: #d00000;
+    color: #7b0000;
 }
 
 h3, h4, h5 {
-    color: #8d0057;
+    color: #3d0026;
 }
 
 strong {
@@ -129,5 +129,5 @@ strong {
 }
 
 .box {
-    border: 7.5px solid #060000;
+    border: 7.5px solid #1e7200;
 }

@@ -25,14 +25,24 @@
     
 }
 
+.filter {
+    margin: .25rem;
+}
+.theme {
+    margin: .25rem;
+}
+.hide-gif {
+    margin: .25rem;
+}
 .access-menu {
     display: none;
     background: rgb(34, 30, 30);
-    width: 12rem;
-    height: 10rem;
+    width: 12.5rem;
+    height: 7.5rem;
     border-radius: 5px;
     border: 7.5px outset rgb(70, 52, 56);
     margin-left: -2.5rem;
+    padding: 0.25rem;
 }
 
 .access-button {

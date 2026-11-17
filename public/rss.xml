@@ -21,14 +21,38 @@
   <language>en-ca</language>
   
   <lastBuildDate>
-    Tue, 15 Sept 2026 17:06:00 -0700
+    Mon, 16 Nov 2026 23:38:00 -0700
   </lastBuildDate>
   
-  <ttl>420</ttl>
+  <ttl>30</ttl>
   
   
   <!--Header above, feed below-->
-<item>
+    <item>
+
+        <title>
+            WHOLE SITE UPDATE
+        </title>
+
+            <description>
+                Updated site layout to Grid, restructured with eleventy for ease of maintenance
+            </description>
+
+            <link>
+                https://lichenthropic.neocities.org/pages/home
+            </link>
+
+            <guid>
+                https://lichenthropic.neocities.org/pages/home
+            </guid>
+
+            <pubDate>
+                Mon, 16 Nov 2026 23:38:00 -0700
+            </pubDate>
+
+    </item>
+
+    <item>
 
         <title>
             update

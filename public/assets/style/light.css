@@ -1,3 +1,3 @@
 body {
-    background-image: url('../bg-images/moss-brick.jpg');
+    background-image: url('{{ nesting }}assets/bg-images/moss-brick.jpg');
 }

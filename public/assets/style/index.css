@@ -16,23 +16,27 @@ html {
 body {
     font-family: "pixel";
     color: rgb(194, 183, 161);
-    height: 100vh;
-    width: 100vw;
     overflow-x: hidden;
     background-image: url('../custom-assets/index-bg.JPG');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.index-grid {
+    height: 100%;
+    width: 100%;
     text-align: center;
     display: grid;
     grid-template-columns: 0.5fr 1fr 2fr 1fr 0.5fr;
-    grid-template-rows: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px 0px;
+    grid-template-rows: 0.15fr .15fr .15fr 2fr 1fr 1fr 1fr 0.25fr 0.25fr;
+    gap: 0.5rem 0.5rem;
     grid-auto-flow: row;
     grid-template-areas:
-        "accessability accessability . . ."
+        ". . . . ."
+        "accessability accessability . right-bar right-bar"
         ". . welcome right-bar right-bar"
-        ". . enter right-bar right-bar"
+        ". . welcome right-bar right-bar"
         ". . enter right-bar right-bar"
         "left-box left-box cw right-bar right-bar"
         "left-box left-box cw right-bar right-bar"
@@ -72,14 +76,12 @@ body {
     font-size: 90px;
     grid-area: welcome;
     background-image: url('../bg-images/pixel-brick.png');
-    margin-top: -22rem;
-    margin-bottom: 15rem;
     border: 0.5rem outset rgb(94, 7, 7);
+    margin-bottom: 5rem;
 }
 
 .enter {
     grid-area: enter;
-    margin-top: -7.5rem;
 }
 
 #enter-button {
@@ -113,7 +115,7 @@ body {
 
 .right-bar {
     margin: 1rem;
-    margin-top: -23rem;
+    margin-top: -1rem;
     margin-bottom: 0rem;
     grid-area: right-bar;
     padding: 1rem;

@@ -76,7 +76,7 @@ body {
     font-size: 90px;
     grid-area: welcome;
     background-image: url('../bg-images/pixel-brick.png');
-    border: 0.5rem outset rgb(56, 4, 67);
+    border: 0.5rem outset rgb(67, 22, 33);
     margin-bottom: 5rem;
 }
 
@@ -110,7 +110,7 @@ body {
     text-shadow: 5px 5px 3px #000000;
     grid-area: cw;
     background-image: url('../bg-images/pixel-brick.png');
-    border: 0.5rem outset rgb(94, 7, 7);
+    border: 0.5rem outset rgb(67, 22, 33);
 }
 
 .right-bar {

@@ -203,8 +203,18 @@ footer {
 
 .web-rings {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 225px;
+}
+
+#punk-webring {
+    background-color: rgb(10, 5, 5);
+    border-radius: 0.25rem;
+    border: .25rem outset rgba(167, 11, 11, 0.304);
+    margin-left: -1.75rem;
+    margin-right: 1rem;
 }
 
 .motion-button-bg {
